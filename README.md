@@ -1,3 +1,3 @@
 ## URL Shortener Application
 
-![System Architecture][architecture.png]
+![System Architecture](architecture.png)
