@@ -1,1 +1,7 @@
-.env
+# Build artifacts
+tmp/
+*.log
+app-from-container
+
+# Data files
+data/

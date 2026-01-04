@@ -1,4 +1,4 @@
-package urlshortenerapplication
+package main
 
 import (
 	"fmt"
@@ -26,7 +26,6 @@ func main() {
 	}
 
 	log.Fatal(router.Run(":" + port))
-
 }
 
 func setupRouters(router *gin.Engine) {
@@ -34,4 +33,5 @@ func setupRouters(router *gin.Engine) {
 	router.GET("/api/v1/:shortID", routes.GetByShortID)
 	router.PUT("/api/v1/:shortID", routes.EditURL)
 	router.DELETE("/api/v1/:shortID", routes.DeleteURL)
+	router.POST("/api/v1/addTag", routes.AddTag)
 }
