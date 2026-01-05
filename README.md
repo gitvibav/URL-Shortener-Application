@@ -1,14 +1,12 @@
 ## URL Shortener Application
 
-![System Architecture](architecture.png)
+### Local Development Setup
 
-## Local Development Setup
-
-### Prerequisites
+#### Prerequisites
 - Go 1.25 or later
 - Redis (local installation)
 
-### Installation
+#### Installation
 
 1. **Install Redis locally:**
    ```bash
@@ -39,7 +37,7 @@
 
    The API will be available at `http://localhost:8080`
 
-### API Endpoints
+#### API Endpoints
 
 - `POST /api/v1` - Shorten a URL
 - `GET /api/v1/:shortID` - Get original URL by short ID
